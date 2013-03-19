@@ -1,0 +1,48 @@
+html, body
+    background-color: #F6F7F9
+
+body
+    color: $body-text-color
+    font: 12px $body-text
+    text-rendering: optimizeLegibility
+
+h1, h2, h3, h4, h5, h6
+    color: $title-text-color
+    font-family: $title-text
+    margin: 0
+
+p
+    margin: 0 0 1.2em
+
+blockquote, cite, ul
+    margin: 0 0 1.2em
+
+blockquote
+    border-left: 10px solid #F6F7F9
+    color: $light-text-color
+    padding: 0 2.5%
+
+cite
+    display: block
+
+ul
+    li
+        padding: 5px 0
+
+a
+    color: $link-text-color
+    text-decoration: none
+    @include transition(color)
+
+    span
+        border-bottom: 1px solid transparent
+        @include transition(border-color)
+
+    &:hover
+        color: $link-text-color
+
+        span
+            border-color: $link-text-color
+
+em
+    color: #AFAFAF

@@ -1,0 +1,159 @@
+header, section, footer
+    @include prefix(box-sizing, border-box)
+    padding: 8%
+
+    hr
+        background-color: #DDD
+        border: 0
+        height: 3px
+        margin: 1.2em auto
+        width: 40%
+
+        &:last-child
+            margin-bottom: 0
+
+    div.content
+        max-width: 960px
+        margin: 0 auto
+        width: 80%
+
+header, footer
+    text-align: center
+
+    p:last-child
+        margin-bottom: 0
+
+header
+    a.logo
+        display: inline-block
+        position: relative
+        margin: 1.4em 0 2.8em
+        width: 40%
+        z-index: 1
+
+        span,
+        span:before
+            display: block
+            position: absolute
+
+        span
+            height: 99%
+            overflow: hidden
+            width: 99%
+
+        span:before
+            content: ""
+            height: 120%
+            left: -10%
+            top: -10%
+            width: 120%
+            @include background-gradient(#282BD8 20%, #F8125F 80%, -45deg)
+            @include animation(logo-rotate, 30s, linear, infinite)
+
+        &:hover span
+            border: 0
+
+            &:before
+                @include animation(logo-hover-rotate, 1.5s, linear, infinite)
+
+        img
+            max-width: 100%
+            position: relative
+            vertical-align: top
+            width: auto
+            z-index: 1
+
+            &.static
+                display: none
+
+            &.mask
+                display: inline-block !important
+
+    article.intro
+        font-family: $title-text
+        font-size: 1.4em
+        line-height: 1.2em
+        margin-left: auto
+        margin-right: auto
+        width: 90%
+
+section
+    background-color: #FFF
+
+    article
+        font-size: 1.2em
+        line-height: 1.4em
+        margin: 0 0 1.4em
+        position: relative
+
+        &:last-child
+            margin-bottom: 0
+
+        h3,
+        dl.meta dt
+            color: #AAA
+
+        h3
+            font-size: 1.8em
+            line-height: 1.4em
+            margin-bottom: 0.8em
+            text-align: center
+
+        img
+            height: auto
+            margin-bottom: 1.2em
+            max-width: 100%
+            vertical-align: top
+            width: auto
+
+            &.js-lazyload
+                display: none
+
+            &.shadow
+                @include box-shadow(0 10px 30px rgba(0,0,0,0.1))
+
+        p
+
+            &:last-child
+                margin-bottom: 0
+
+        dl.meta
+            font-size: 0.9em
+            margin: 0 0 1.5em
+
+            dt, dd
+                margin: 0
+                padding: 0
+
+            dt
+                margin-bottom: 0.2em
+
+            &.role,
+            &.client,
+            &.dates
+                display: block
+                float: left
+                width: 28%
+                margin-left: 8%
+
+            &.role
+                margin-left: 0
+
+            &.description
+                clear: both
+                margin-bottom: 0
+
+    @include section(pictela-com, #DDD, #666, #999, #EB3D23, #AAA)
+    @include section(pictela-branding, #4B4B4B, #FFF, #BBB, #EB3D23, #888)
+    @include section(pictela-premium-formats, #F6F6F6, #333, #6C6C6C, #EB3D23, #D6D6D6)
+    @include section(thinklaundry-branding, #FFF, #58585B, #939597, #304866, #D1D2D4)
+    @include section(grapevine, #302E31, #FEFEFE, #ABA5B0, #2AA9B0, #444046)
+    @include section(limewire-splashes, #222, #FFF, #888, #C2E986, #444046)
+    @include section(limewire-music-blog, #EBEBEB, #313131, #9C9C9C, #007FB8, #DDD)
+    @include section(limespot-com, #FFF, #444, #949494, #0085FF, #C4C4C4)
+    @include section(limewire-com, #F4F4F4, #333, #807E7E, #2152A6, #B7B7B7)
+    @include section(limewire-org, #FFF, #333, #038640, #3A7DA7, #CBCDCB)
+
+footer p
+    font-size: 1em
+    color: $light-text-color

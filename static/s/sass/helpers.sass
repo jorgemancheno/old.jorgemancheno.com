@@ -1,0 +1,81 @@
+@mixin prefix($name, $arg)
+    -webkit-#{$name}: $arg
+    -moz-#{$name}: $arg
+    -ms-#{$name}: $arg
+    -o-#{$name}: $arg
+    #{$name}: $arg
+
+@mixin background-gradient($from: transparent, $to: transparent, $start: top)
+    background: $from
+    // background-image: -webkit-gradient(linear, left top, left bottom, from($from), to($to)) /* Needed? */
+    background-image: -webkit-linear-gradient($start, $from, $to)
+    background-image: -moz-linear-gradient($start, $from, $to)
+    background-image: -ms-linear-gradient($start, $from, $to)
+    background-image: -o-linear-gradient($start, $from, $to)
+    // background-image: linear-gradient($start, $from, $to) /* Stacking issue in Chrome */
+
+@mixin border-radius($radius: 2px)
+    @include prefix(border-radius, $radius)
+
+@mixin box-sizing($model: content-box)
+    @include prefix(box-sizing, $model)
+
+@mixin box-shadow($args: none)
+    @include prefix(box-shadow, $args)
+
+@mixin rotate($angle: 0deg)
+    @include prefix(rotate, $angle)
+
+@mixin scale($ratio: 1)
+    @include prefix(scale, $ratio)
+
+@mixin transition($property: all, $duration: 0.2s, $timing-function: ease-in-out)
+    @include prefix(transition-property, $property)
+    @include prefix(transition-duration, $duration)
+    @include prefix(transition-timing-function, $timing-function)
+
+@mixin truncate
+    overflow: hidden
+    text-overflow: ellipsis
+    white-space: nowrap
+
+@mixin keyframes($name)
+    @-webkit-keyframes #{$name}
+        @content
+    @-moz-keyframes #{$name}
+        @content
+    @-ms-keyframes #{$name}
+        @content
+    @keyframes #{$name}
+        @content
+
+@mixin animation($name, $duration: 0, $timing-function: ease, $iteration-count: 1)
+    @if $name
+        @include prefix(animation-name, $name)
+        @include prefix(animation-duration, $duration)
+        @include prefix(animation-timing-function, $timing-function)
+        @include prefix(animation-iteration-count, $iteration-count)
+    @else
+        @warn "Animation name not specified"
+
+@mixin section($name, $background-color: #FFF, $text-color: #737373, $light-text-color: #AAA, $link-text-color: #F8125F, $rule-color: #DDD)
+    &##{$name}
+        background-color: $background-color
+
+        article
+            color: $text-color
+
+            h3,
+            dl.meta dt
+                font-family: $title-text
+                color: $light-text-color
+
+            hr
+                background-color: $rule-color
+
+            a
+                color: $link-text-color
+
+                &:hover
+                    span
+                        border-color: $link-text-color

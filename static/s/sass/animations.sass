@@ -1,0 +1,11 @@
+@include keyframes(logo-rotate)
+    from
+        @include prefix(transform, rotate(0deg))
+    to
+        @include prefix(transform, rotate(360deg))
+
+@include keyframes(logo-hover-rotate)
+    from
+        @include prefix(transform, rotate(360deg))
+    to
+        @include prefix(transform, rotate(00deg))
