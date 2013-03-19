@@ -308,7 +308,22 @@ header article.intro {
   line-height: 1.2em;
   margin-left: auto;
   margin-right: auto;
-  width: 90%; }
+  width: 90%;
+  -webkit-transition-property: font-size;
+  -moz-transition-property: font-size;
+  -ms-transition-property: font-size;
+  -o-transition-property: font-size;
+  transition-property: font-size;
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  -ms-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-timing-function: ease-in-out;
+  -moz-transition-timing-function: ease-in-out;
+  -ms-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out; }
 
 section {
   background-color: white; }
@@ -316,7 +331,22 @@ section {
     font-size: 1.2em;
     line-height: 1.4em;
     margin: 0 0 1.4em;
-    position: relative; }
+    position: relative;
+    -webkit-transition-property: font-size;
+    -moz-transition-property: font-size;
+    -ms-transition-property: font-size;
+    -o-transition-property: font-size;
+    transition-property: font-size;
+    -webkit-transition-duration: 0.2s;
+    -moz-transition-duration: 0.2s;
+    -ms-transition-duration: 0.2s;
+    -o-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    -webkit-transition-timing-function: ease-in-out;
+    -moz-transition-timing-function: ease-in-out;
+    -ms-transition-timing-function: ease-in-out;
+    -o-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out; }
     section article:last-child {
       margin-bottom: 0; }
     section article h3,
