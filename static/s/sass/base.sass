@@ -1,26 +1,26 @@
 html, body
-    background-color: #F6F7F9
+    background-color: #ECECEC
 
 body
-    color: $body-text-color
-    font: 12px $body-text
+    color: $dark-base-color
+    font: 14px $body-text
     text-rendering: optimizeLegibility
 
 h1, h2, h3, h4, h5, h6
-    color: $title-text-color
+    color: $dark-primary-color
     font-family: $title-text
     font-weight: normal
     margin: 0
 
 p
-    margin: 0 0 1.2em
+    margin: 0
 
 blockquote, cite, ul
     margin: 0 0 1.2em
 
 blockquote
     border-left: 10px solid #F6F7F9
-    color: $light-text-color
+    color: $dark-secondary-color
     padding: 0 2.5%
 
 cite
@@ -31,19 +31,19 @@ ul
         padding: 5px 0
 
 a
-    color: $link-text-color
+    color: $dark-primary-color
     text-decoration: none
     @include transition(color)
 
     span
-        border-bottom: 1px solid transparent
+        border-bottom: 1px solid $primary-color
         @include transition(border-color)
 
     &:hover
-        color: $link-text-color
+        color: $primary-color
 
         span
-            border-color: $link-text-color
+            border-color: $primary-color
 
 em
     color: #AFAFAF

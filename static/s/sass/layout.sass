@@ -1,161 +1,171 @@
-header, section, footer
-    @include prefix(box-sizing, border-box)
-    padding: 8%
+html, body
+  height: 100%
+  overflow: hidden
+  width: 100%
 
-    hr
-        background-color: #DDD
-        border: 0
-        height: 3px
-        margin: 1.2em auto
-        width: 40%
+.layout
+  border: 1em solid white
+  bottom: 0
+  left: 0
+  overflow: auto
+  position: absolute
+  right: 0
+  top: 0
 
-        &:last-child
-            margin-bottom: 0
+  .columns
+    align-items: stretch
+    display: flex
+    flex-flow: row wrap
 
-    div.content
-        max-width: 960px
-        margin: 0 auto
-        width: 80%
+    .col
+      flex: 1 33%
 
-header, footer
-    text-align: center
-
-    p:last-child
-        margin-bottom: 0
+      &.col-three
+        text-align: right
 
 header
-    a.logo
-        display: inline-block
-        position: relative
-        margin: 1.4em 0 2.8em
-        width: 40%
-        z-index: 1
+  border-right: 1px solid rgba(0,0,0,0.06)
+  bottom: 1em
+  left: 1em
+  position: fixed
+  top: 1em
+  width: 15em
 
-        span,
-        span:before
-            display: block
-            position: absolute
+  .logo,
+  .logo-image
+    display: block
 
-        span
-            height: 99%
-            overflow: hidden
-            width: 99%
+  .logo
+    margin: 5em auto 4em
+    opacity: 0.54
+    width: 60%
+    @include transition(opacity)
 
-        span:before
-            content: ""
-            height: 120%
-            left: -10%
-            top: -10%
-            width: 120%
-            @include background-gradient(#282BD8 20%, #F8125F 80%, -45deg)
-            @include animation(logo-rotate, 30s, linear, infinite)
+    &:hover
+      opacity: 0.87
 
-        &:hover span
-            border: 0
+  .logo-image
+    width: 100%
 
-            &:before
-                @include animation(logo-hover-rotate, 1.5s, linear, infinite)
+  nav
+    padding: 0 1em
 
-        img
-            max-width: 100%
-            position: relative
-            vertical-align: top
-            width: auto
-            z-index: 1
+    a
+      display: block
+      margin-left: 0.2em
+      padding: 0.8em 0
 
-            &.static
-                display: none
+    ol
+      margin: 0
+      padding: 0 0 0 1.4em
 
-            &.mask
-                display: inline-block !important
+      li
+        color: $dark-hint-color
 
-    article.intro
-        font-family: $title-text
-        font-size: 1.4em
-        line-height: 1.2em
-        margin-left: auto
-        margin-right: auto
-        width: 90%
-        @include transition(font-size)
+footer
+  font-family: $title-text
+  margin-left: 15em
+  padding: 2em 3em
 
-section
-    background-color: #FFF
+  .content
+    border-top: 1px solid $dark-divider-color
+    padding: 1em 0
 
-    article
-        font-size: 1.2em
-        line-height: 1.4em
-        margin: 0 0 1.4em
-        position: relative
-        @include transition(font-size)
+  .col
+    font-size: 1.2em
 
-        &:last-child
-            margin-bottom: 0
+    &.col-two
+      text-align: center
 
-        h3,
-        dl.meta dt
-            color: #AAA
+      img
+        height: 24px
+        opacity: 0.38
+        width: 24px
 
-        h3
-            font-size: 1.8em
-            line-height: 1.4em
-            margin-bottom: 0.8em
-            text-align: center
+    &.col-three
+      color: $dark-hint-color
+      opacity: 0.5
 
-        img
-            height: auto
-            margin-bottom: 1.2em
-            max-width: 100%
-            vertical-align: top
-            width: auto
+.page
+  margin: 0 0 2em 15em
+  padding: 5em 3em
 
-            &.js-lazyload
-                display: none
+  .page-header
+    border-bottom: 1px solid $dark-divider-color
+    font-size: 1.2em
+    opacity: 0.5
+    padding: 0.5em 0
 
-            &.shadow
-                @include box-shadow(0 10px 30px rgba(0,0,0,0.1))
+    .page-number
+      color: $dark-secondary-color
+      font-weight: bold
 
-        p
+    .page-title
+      color: $dark-hint-color
+      font-style: italic
 
-            &:last-child
-                margin-bottom: 0
+  .intro
+    font-size: 3em
+    padding: 1em 0
 
-        dl.meta
-            font-size: 0.9em
-            margin: 0 0 1.5em
+.project
+  padding: 3em 0
 
-            dt, dd
-                margin: 0
-                padding: 0
+  .project-image-wrap
+    align-items: center
+    background-color: rgba(0,0,0,0.06)
+    display: flex
+    height: 600px
+    margin: 0 0 3em
+    overflow: hidden
+    position: relative
 
-            dt
-                margin-bottom: 0.2em
+  .project-image
+    margin: 0 auto
+    width: 90%
+    transform: scale(1)
+    transition: 0.2s linear
 
-            &.role,
-            &.client,
-            &.dates
-                display: block
-                float: left
-                width: 28%
-                margin-left: 8%
+  img
+    display: block
+    height: auto
+    max-width: 100%
 
-            &.role
-                margin-left: 0
+    &.shadow
+      box-shadow: $dark-divider-color 0 0 1.5em
 
-            &.description
-                clear: both
-                margin-bottom: 0
+  .project-meta
+    font-size: 1.2em
 
-    @include section(pictela-com, #DDD, #666, #999, #EB3D23, #AAA)
-    @include section(pictela-branding, #4B4B4B, #FFF, #BBB, #EB3D23, #888)
-    @include section(pictela-premium-formats, #F6F6F6, #333, #6C6C6C, #EB3D23, #D6D6D6)
-    @include section(thinklaundry-branding, #FFF, #58585B, #939597, #304866, #D1D2D4)
-    @include section(grapevine, #302E31, #FEFEFE, #ABA5B0, #2AA9B0, #444046)
-    @include section(limewire-splashes, #222, #FFF, #888, #C2E986, #444046)
-    @include section(limewire-music-blog, #EBEBEB, #313131, #9C9C9C, #007FB8, #DDD)
-    @include section(limespot-com, #FFF, #444, #949494, #0085FF, #C4C4C4)
-    @include section(limewire-com, #F4F4F4, #333, #807E7E, #2152A6, #B7B7B7)
-    @include section(limewire-org, #FFF, #333, #038640, #3A7DA7, #CBCDCB)
+    .project-title
+      font-size: 1.5em
 
-footer p
-    font-size: 1em
-    color: $light-text-color
+    .project-role
+      color: $dark-secondary-color
+      font-size: 0.8em
+      text-transform: uppercase
+
+    .project-description
+      color: $dark-hint-color
+
+  &.with-mask
+
+    .project-image-wrap
+      align-items: flex-start
+      width: auto
+
+    .project-image
+      display: block
+      margin: 5em auto 0
+      max-width: 90%
+      width: auto
+
+  .flexslider
+    background-color: transparent
+    border: 0
+    margin: 0
+    position: static
+
+    .flex-control-nav
+      bottom: 1em
+      z-index: 2
