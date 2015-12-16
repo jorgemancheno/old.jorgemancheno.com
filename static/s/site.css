@@ -330,3 +330,7 @@ footer {
     .project .flexslider .flex-control-nav {
       bottom: 1em;
       z-index: 2; }
+      .project .flexslider .flex-control-nav.flex-control-paging {
+        padding: 0 1em;
+        text-align: left;
+        width: auto; }
