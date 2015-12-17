@@ -103,7 +103,8 @@ header {
   left: 1em;
   position: fixed;
   top: 1em;
-  width: 15em; }
+  width: 15em;
+  z-index: 3; }
   header .logo,
   header .logo-image {
     display: block; }
@@ -230,3 +231,68 @@ footer {
         padding: 0 1em;
         text-align: left;
         width: auto; }
+
+@media only screen and (max-width: 1024px) {
+  header .logo {
+    margin: 3em auto 1em; }
+
+  .page {
+    margin-bottom: 0;
+    padding: 3em; }
+    .page .intro {
+      font-size: 2em; }
+
+  .project .project-image-wrap {
+    height: 400px; } }
+@media only screen and (max-width: 768px) {
+  .layout {
+    border-width: 0.5em; }
+    .layout .columns {
+      display: block; }
+      .layout .columns .col.col-three {
+        text-align: left; }
+
+  header {
+    background-color: #ECECEC;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+    border-right: 0;
+    bottom: auto;
+    height: 6em;
+    left: 0.5em;
+    right: 0.5em;
+    top: 0.5em;
+    width: auto; }
+    header .logo {
+      margin: 1em auto;
+      width: 4em; }
+
+  footer {
+    margin-left: 0;
+    padding: 1em 1.5em; }
+    footer .columns {
+      display: flex !important; }
+      footer .columns .col {
+        flex: 1 100% !important;
+        text-align: center !important; }
+        footer .columns .col.col-one, footer .columns .col.col-three {
+          margin-bottom: 1em; }
+        footer .columns .col.col-two {
+          order: 1; }
+
+  nav {
+    display: none; }
+
+  .page {
+    margin: 0 0 2em;
+    padding: 2em 1.5em; }
+    .page.page-one {
+      margin-top: 6em; }
+
+  .project {
+    padding: 2em 0; }
+    .project .project-image-wrap {
+      height: 250px; }
+    .project .col-one, .project .col-two {
+      margin-bottom: 1em; }
+    .project.with-mask .project-image {
+      margin: 2em auto 0; } }

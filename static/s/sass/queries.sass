@@ -1,0 +1,81 @@
+@media only screen and (max-width: 1024px)
+  header
+    .logo
+      margin: 3em auto 1em
+
+  .page
+    margin-bottom: 0
+    padding: 3em
+
+    .intro
+      font-size: 2em
+
+  .project
+    .project-image-wrap
+      height: 400px
+
+@media only screen and (max-width: 768px)
+  .layout
+    border-width: 0.5em
+    .columns
+      display: block
+
+      .col.col-three
+        text-align: left
+
+  header
+    background-color: $page-color
+    border-bottom: 1px solid rgba(0,0,0,0.06)
+    border-right: 0
+    bottom: auto
+    height: 6em
+    left: 0.5em
+    right: 0.5em
+    top: 0.5em
+    width: auto
+
+    .logo
+      margin: 1em auto
+      width: 4em
+
+  footer
+    margin-left: 0
+    padding: 1em 1.5em
+
+    .columns
+      display: flex !important
+
+      .col
+        flex: 1 100% !important
+        text-align: center !important
+
+        &.col-one,
+        &.col-three
+          margin-bottom: 1em
+
+        &.col-two
+          order: 1
+
+  // @TODO: add hamburger menu
+  nav
+    display: none
+
+  .page
+    margin: 0 0 2em
+    padding: 2em 1.5em
+
+    &.page-one
+      margin-top: 6em
+
+  .project
+    padding: 2em 0
+
+    .project-image-wrap
+      height: 250px
+
+    .col-one, .col-two
+      margin-bottom: 1em
+
+    &.with-mask
+      .project-image
+        margin: 2em auto 0
