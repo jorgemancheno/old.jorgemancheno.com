@@ -1,110 +1,6 @@
 @import url(../lib/normalize-css/normalize.css);
 @import url(../lib/flexslider/flexslider.css);
 @import url(https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700,700italic);
-@-webkit-keyframes logo-rotate {
-  from {
-    -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    transform: rotate(0deg); }
-  to {
-    -webkit-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -ms-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
-    transform: rotate(360deg); } }
-@-moz-keyframes logo-rotate {
-  from {
-    -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    transform: rotate(0deg); }
-  to {
-    -webkit-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -ms-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
-    transform: rotate(360deg); } }
-@-ms-keyframes logo-rotate {
-  from {
-    -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    transform: rotate(0deg); }
-  to {
-    -webkit-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -ms-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
-    transform: rotate(360deg); } }
-@keyframes logo-rotate {
-  from {
-    -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    transform: rotate(0deg); }
-  to {
-    -webkit-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -ms-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
-    transform: rotate(360deg); } }
-@-webkit-keyframes logo-hover-rotate {
-  from {
-    -webkit-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -ms-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
-    transform: rotate(360deg); }
-  to {
-    -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    transform: rotate(0deg); } }
-@-moz-keyframes logo-hover-rotate {
-  from {
-    -webkit-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -ms-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
-    transform: rotate(360deg); }
-  to {
-    -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    transform: rotate(0deg); } }
-@-ms-keyframes logo-hover-rotate {
-  from {
-    -webkit-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -ms-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
-    transform: rotate(360deg); }
-  to {
-    -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    transform: rotate(0deg); } }
-@keyframes logo-hover-rotate {
-  from {
-    -webkit-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -ms-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
-    transform: rotate(360deg); }
-  to {
-    -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    transform: rotate(0deg); } }
 html, body {
   background-color: #ECECEC; }
 
@@ -126,7 +22,7 @@ blockquote, cite, ul {
   margin: 0 0 1.2em; }
 
 blockquote {
-  border-left: 10px solid #F6F7F9;
+  border-left: 10px solid rgba(0, 0, 0, 0.12);
   color: rgba(0, 0, 0, 0.54);
   padding: 0 2.5%; }
 
@@ -155,7 +51,7 @@ a {
   -o-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out; }
   a span {
-    border-bottom: 1px solid #0881b3;
+    border-bottom: 1px solid #0881B3;
     -webkit-transition-property: border-color;
     -moz-transition-property: border-color;
     -ms-transition-property: border-color;
@@ -172,12 +68,12 @@ a {
     -o-transition-timing-function: ease-in-out;
     transition-timing-function: ease-in-out; }
   a:hover {
-    color: #0881b3; }
+    color: #0881B3; }
     a:hover span {
-      border-color: #0881b3; }
+      border-color: #0881B3; }
 
 em {
-  color: #AFAFAF; }
+  color: rgba(0, 0, 0, 0.38); }
 
 html, body {
   height: 100%;

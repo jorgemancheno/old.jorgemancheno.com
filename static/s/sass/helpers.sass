@@ -60,25 +60,3 @@
         @include prefix(animation-iteration-count, $iteration-count)
     @else
         @warn "Animation name not specified"
-
-@mixin section($name, $background-color: #FFF, $text-color: #737373, $light-text-color: #AAA, $link-text-color: #F8125F, $rule-color: #DDD)
-    &##{$name}
-        background-color: $background-color
-
-        article
-            color: $text-color
-
-            h3,
-            dl.meta dt
-                font-family: $title-text
-                color: $light-text-color
-
-            hr
-                background-color: $rule-color
-
-            a
-                color: $link-text-color
-
-                &:hover
-                    span
-                        border-color: $link-text-color
