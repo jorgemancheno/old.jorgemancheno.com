@@ -28,7 +28,7 @@
       color: #FFF;
     }
     .prompt {
-      color: #DDD;
+      color: #BBB;
     }
     .command {
       color: #FFF;
@@ -38,6 +38,7 @@
 
 <body>
   <pre>
+
   <?php echo $output; ?>
   </pre>
 </body>
