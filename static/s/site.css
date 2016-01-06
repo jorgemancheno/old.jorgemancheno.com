@@ -1,5 +1,5 @@
-@import url(../../node_modules/normalize.css/normalize.css);
-@import url(../../node_modules/flexslider/flexslider.css);
+@import url(../lib/normalize-css/normalize.css);
+@import url(../lib/flexslider/flexslider.css);
 @import url(https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700,700italic);
 html, body {
   background-color: #ECECEC; }
@@ -235,14 +235,15 @@ footer {
 @media only screen and (max-width: 1024px) {
   header .logo {
     margin: 3em auto 1em; }
+
   .page {
     margin-bottom: 0;
     padding: 3em; }
     .page .intro {
       font-size: 2em; }
+
   .project .project-image-wrap {
     height: 400px; } }
-
 @media only screen and (max-width: 768px) {
   .layout {
     border-width: 0.5em; }
@@ -250,6 +251,7 @@ footer {
       display: block; }
       .layout .columns .col.col-three {
         text-align: left; }
+
   header {
     background-color: #ECECEC;
     border-bottom: 1px solid rgba(0, 0, 0, 0.06);
@@ -263,6 +265,7 @@ footer {
     header .logo {
       margin: 1em auto;
       width: 4em; }
+
   footer {
     margin-left: 0;
     padding: 1em 1.5em; }
@@ -275,13 +278,16 @@ footer {
           margin-bottom: 1em; }
         footer .columns .col.col-two {
           order: 1; }
+
   nav {
     display: none; }
+
   .page {
     margin: 0 0 2em;
     padding: 2em 1.5em; }
     .page.page-one {
       margin-top: 6em; }
+
   .project {
     padding: 2em 0; }
     .project .project-image-wrap {
