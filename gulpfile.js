@@ -22,7 +22,12 @@ gulp.task('sass:watch', function () {
 });
 
 gulp.task('js:build', function() {
-  return gulp.src('./src/js/*.js')
+  return gulp.src([
+      './node_modules/jquery/dist/jquery.min.js',
+      './node_modules/jquery_lazyload/jquery.lazyload.js',
+      './node_modules/flexslider/jquery.flexslider.js',
+      './src/js/*.js'
+    ])
     .pipe(plumber(function(error) {
       console.log(error)
     }))
