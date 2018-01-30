@@ -4,14 +4,14 @@
     <title>Jorge Mancheno</title>
     <meta charset=utf-8>
     <meta name="author" content="Jorge Mancheno" />
-    <meta name="description" content="Designer, developer, an Apple enthusiast, and a lifelong New Yorker. Currently residing in sunny Brooklyn, NY." />
-    <meta name="keywords" content="Jorge Mancheno, design, designer, ui, interface design, visual design, javascript, jquery, icons, Apple, Mac, OS X, OSX, NY, New York" />
+    <meta name="description" content="Designer, sometime Developer. Currently residing in sunny Brooklyn, NY." />
+    <meta name="keywords" content="Jorge Mancheno, design, designer, ui, interface design, visual design, product design, javascript, jquery, icons, Apple, Mac, OS X, OSX, NY, New York" />
     <meta name="robots" content="index,nofollow" />
     <meta name="revisit-after" content="7 days" />
     <meta name="viewport" content="width=device-width" />
 
     <!-- CSS -->
-    <link rel="stylesheet" href="./static/s/site.css" media="screen, projection" />
+    <link rel="stylesheet" href="./dist/css/site.css" media="screen, projection" />
     <!-- / CSS -->
 
 </head>
@@ -22,26 +22,35 @@
 
     <header>
       <div class="content">
-        <a href="/" class="logo">
-          <img src="./static/i/layout/logo.svg" class="logo-image">
+
+        <h1 class="logo">
+          <a href="/" class="logo-link">
+            <img src="./src/images/layout/logo.svg" class="logo-image">
+          </a>
+        </h1>
+
+        <a href="#" class="burger" data-target="#page-nav">
+          <span>
+            <i class="lines"></i>
+          </span>
         </a>
 
-        <nav>
-          <ol>
-            <li><a href="#introduction"><span>Introduction</span></a></li>
-            <li>
+        <nav id="page-nav">
+          <ol class="page-item-list">
+            <li class="page-item"><a href="#introduction"><span>Introduction</span></a></li>
+            <li class="page-item">
               <a href="#work"><span>Work</span></a>
-              <ol>
-                <li><a href="#pictela-com"><span>Pictela.com</span></a></li>
-                <li><a href="#pictela-branding"><span>Pictela Branding</span></a></li>
-                <li><a href="#pictela-premium-formats"><span>Pictela Premium Formats</span></a></li>
-                <li><a href="#thinklaundry-branding"><span>ThinkLaundry Branding</span></a></li>
-                <li><a href="#grapevine"><span>Grapevine</span></a></li>
-                <li><a href="#limewire-splashes"><span>LimeWire Splashes</span></a></li>
-                <li><a href="#limewire-music-blog"><span>LimeWire Music Blog</span></a></li>
-                <li><a href="#limespot-com"><span>LimeSpot.com</span></a></li>
-                <li><a href="#limewire-com"><span>LimeWire.com</span></a></li>
-                <li><a href="#limewire-org"><span>LimeWire.org</span></a></li>
+              <ol class="page-item-list">
+                <li class="page-item"><a href="#pictela-com"><span>Pictela.com</span></a></li>
+                <li class="page-item"><a href="#pictela-branding"><span>Pictela Branding</span></a></li>
+                <li class="page-item"><a href="#pictela-premium-formats"><span>Pictela Premium Formats</span></a></li>
+                <li class="page-item"><a href="#thinklaundry-branding"><span>ThinkLaundry Branding</span></a></li>
+                <li class="page-item"><a href="#grapevine"><span>Grapevine</span></a></li>
+                <li class="page-item"><a href="#limewire-splashes"><span>LimeWire Splashes</span></a></li>
+                <li class="page-item"><a href="#limewire-music-blog"><span>LimeWire Music Blog</span></a></li>
+                <li class="page-item"><a href="#limespot-com"><span>LimeSpot.com</span></a></li>
+                <li class="page-item"><a href="#limewire-com"><span>LimeWire.com</span></a></li>
+                <li class="page-item"><a href="#limewire-org"><span>LimeWire.org</span></a></li>
               </ol>
             </li>
           </ol>
@@ -49,314 +58,318 @@
       </div>
     </header>
 
-    <section id="introduction" class="page page-one">
-      <h2 class="page-header">
-        <span class="page-number">01</span>
-        <span class="page-title">Introduction</span>
-      </h2>
+    <div class="pages">
 
-      <p class="intro">
-        Jorge Mancheno is a designer living in sunny Brooklyn, NY. You can <a href="mailto:hello@jorgemancheno.com"><span>say hello</span></a>, <a href="http://twitter.com/jorgemancheno"><span>follow him</span></a>, or <a href="#work"><span>see his work</span></a>.
-      </p>
-    </section>
+      <section id="introduction" class="page page-one">
+        <h2 class="page-header">
+          <span class="page-number">01</span>
+          <span class="page-title">Introduction</span>
+        </h2>
 
-    <section id="work" class="page page-two">
-      <h2 class="page-header">
-        <span class="page-number">02</span>
-        <span class="page-title">Work</span>
-      </h2>
+        <p class="intro">
+          Jorge Mancheno is a designer living in sunny Brooklyn, NY. You can <a href="mailto:hello@jorgemancheno.com"><span>say hello</span></a>, <a href="http://twitter.com/jorgemancheno"><span>follow him</span></a>, or <a href="#work"><span>see his work</span></a>.
+        </p>
+      </section>
 
-      <!-- Pictela.com -->
-      <article id="pictela-com" class="project with-mask">
-        <figure class="project-image-wrap">
-          <span class="project-image">
-            <img src="./static/i/placeholder.png" width="1195" height="2779" class="js-lazyload shadow" data-original="./static/i/projects/pictela-com.png" />
-            <noscript><img src="./static/i/projects/pictela-com.png" width="1195" height="2779" class="shadow" /></noscript>
-          </span>
-        </figure>
+      <section id="work" class="page page-two">
+        <h2 class="page-header">
+          <span class="page-number">02</span>
+          <span class="page-title">Work</span>
+        </h2>
 
-        <div class="project-meta columns">
-          <div class="col col-one">
-            <h3 class="project-title">Pictela.com</h3>
-            <h4 class="project-role">Design &amp; Development</h4>
+        <!-- Pictela.com -->
+        <article id="pictela-com" class="project has-mask">
+          <figure class="project-image-wrap">
+            <span class="project-image">
+              <img src="./src/images/placeholder.png" width="1195" height="2779" class="js-lazyload shadow" data-original="./src/images/projects/pictela-com.png" />
+              <noscript><img src="./src/images/projects/pictela-com.png" width="1195" height="2779" class="shadow" /></noscript>
+            </span>
+          </figure>
+
+          <div class="project-meta columns">
+            <div class="col col-one">
+              <h3 class="project-title">Pictela.com</h3>
+              <h4 class="project-role">Design &amp; Development</h4>
+            </div>
+
+            <div class="col col-two">
+              <p class="project-description">A complete redesign of the Pictela website, featuring the new branding. Responsibilities included design of the website, icon design, and front-end development of the website.</p>
+            </div>
+
+            <div class="col col-three">
+              <a href="http://pictela.com/" target="_blank" class="project-link"><span>View Site &rarr;</span></a>
+            </div>
           </div>
+        </article>
 
-          <div class="col col-two">
-            <p class="project-description">A complete redesign of the Pictela website, featuring the new branding. Responsibilities included design of the website, icon design, and front-end development of the website.</p>
+        <!-- Pictela Branding -->
+        <article id="pictela-branding" class="project">
+          <figure class="project-image-wrap">
+
+            <div class="flexslider">
+              <ul class="slides">
+                <li>
+                  <span class="project-image">
+                    <img src="./src/images/placeholder.png" width="" height="" class="js-lazyload" data-original="./src/images/projects/pictela-branding-1.png" />
+                    <noscript><img src="./src/images/projects/pictela-branding-1.png" width="" height="" /></noscript>
+                  </span>
+                </li>
+                <li>
+                  <span class="project-image">
+                    <img src="./src/images/placeholder.png" width="" height="" class="js-lazyload" data-original="./src/images/projects/pictela-branding-2.png" />
+                    <noscript><img src="./src/images/projects/pictela-branding-2.png" width="" height="" /></noscript>
+                  </span>
+                </li>
+              </ul>
+            </div>
+
+          </figure>
+
+          <div class="project-meta columns">
+            <div class="col col-one">
+              <h3 class="project-title">Pictela Branding</h3>
+              <h4 class="project-role">Design</h4>
+            </div>
+
+            <div class="col col-two">
+              <p class="project-description">A redesign of Pictela's indentity.</p>
+            </div>
+
+            <div class="col col-three">
+            </div>
           </div>
+        </article>
 
-          <div class="col col-three">
-            <a href="http://pictela.com/" target="_blank" class="project-link"><span>View Site &rarr;</span></a>
+        <!-- Pictela Premium Formats -->
+        <article id="pictela-premium-formats" class="project">
+          <figure class="project-image-wrap">
+
+            <div class="flexslider">
+              <ul class="slides">
+                <li>
+                  <span class="project-image">
+                    <img src="./src/images/placeholder.png" width="" height="" class="js-lazyload" data-original="./src/images/projects/pictela-premium-formats-1.png" />
+                    <noscript><img src="./src/images/projects/pictela-premium-formats-1.png" width="" height="" /></noscript>
+                  </span>
+                </li>
+                <li>
+                  <span class="project-image">
+                    <img src="./src/images/placeholder.png" width="" height="" class="js-lazyload" data-original="./src/images/projects/pictela-premium-formats-2.png" />
+                    <noscript><img src="./src/images/projects/pictela-premium-formats-2.png" width="" height="" /></noscript>
+                  </span>
+                </li>
+                <li>
+                  <span class="project-image">
+                    <img src="./src/images/placeholder.png" width="" height="" class="js-lazyload" data-original="./src/images/projects/pictela-premium-formats-3.png" />
+                    <noscript><img src="./src/images/projects/pictela-premium-formats-3.png" width="" height="" /></noscript>
+                  </span>
+                </li>
+                <li>
+                  <span class="project-image">
+                    <img src="./src/images/placeholder.png" width="" height="" class="js-lazyload" data-original="./src/images/projects/pictela-premium-formats-4.png" />
+                    <noscript><img src="./src/images/projects/pictela-premium-formats-4.png" width="" height="" /></noscript>
+                  </span>
+                </li>
+              </ul>
+            </div>
+
+          </figure>
+
+          <div class="project-meta columns">
+            <div class="col col-one">
+              <h3 class="project-title">Pictela Premium Formats</h3>
+              <h4 class="project-role">Design</h4>
+            </div>
+
+            <div class="col col-two">
+              <p class="project-description">Pictela's initial templated ad format offering. Responsibilities included user interface design.</p>
+            </div>
+
+            <div class="col col-three">
+            </div>
           </div>
-        </div>
-      </article>
+        </article>
 
-      <!-- Pictela Branding -->
-      <article id="pictela-branding" class="project">
-        <figure class="project-image-wrap">
+        <!-- ThinkLaundry -->
+        <article id="thinklaundry-branding" class="project">
+          <figure class="project-image-wrap">
+            <span class="project-image">
+              <img src="./src/images/placeholder.png" width="" height="" class="js-lazyload" data-original="./src/images/projects/thinklaundry-branding.png" />
+              <noscript><img src="./src/images/projects/thinklaundry-branding.png" width="" height="" /></noscript>
+            </span>
+          </figure>
 
-          <div class="flexslider">
-            <ul class="slides">
-              <li>
-                <span class="project-image">
-                  <img src="./static/i/placeholder.png" width="" height="" class="js-lazyload" data-original="./static/i/projects/pictela-branding-1.png" />
-                  <noscript><img src="./static/i/projects/pictela-branding-1.png" width="" height="" /></noscript>
-                </span>
-              </li>
-              <li>
-                <span class="project-image">
-                  <img src="./static/i/placeholder.png" width="" height="" class="js-lazyload" data-original="./static/i/projects/pictela-branding-2.png" />
-                  <noscript><img src="./static/i/projects/pictela-branding-2.png" width="" height="" /></noscript>
-                </span>
-              </li>
-            </ul>
+          <div class="project-meta columns">
+            <div class="col col-one">
+              <h3 class="project-title">ThinkLaundry Branding</h3>
+              <h4 class="project-role">Design</h4>
+            </div>
+
+            <div class="col col-two">
+              <p class="project-description">Unused identity for a NYC-based startup.</p>
+            </div>
+
+            <div class="col col-three"></div>
           </div>
+        </article>
 
-        </figure>
+        <!-- Pictela Branding -->
+        <article id="grapevine" class="project has-mask">
+          <figure class="project-image-wrap">
 
-        <div class="project-meta columns">
-          <div class="col col-one">
-            <h3 class="project-title">Pictela Branding</h3>
-            <h4 class="project-role">Design</h4>
+            <div class="flexslider">
+              <ul class="slides">
+                <li>
+                  <span class="project-image">
+                    <img src="./src/images/placeholder.png" width="" height="" class="js-lazyload" data-original="./src/images/projects/grapevine-1.png" />
+                    <noscript><img src="./src/images/projects/grapevine-1.png" width="" height="" /></noscript>
+                  </span>
+                </li>
+                <li>
+                  <span class="project-image">
+                    <img src="./src/images/placeholder.png" width="" height="" class="js-lazyload" data-original="./src/images/projects/grapevine-2.png" />
+                    <noscript><img src="./src/images/projects/grapevine-2.png" width="" height="" /></noscript>
+                  </span>
+                </li>
+              </ul>
+            </div>
+
+          </figure>
+
+          <div class="project-meta columns">
+            <div class="col col-one">
+              <h3 class="project-title">Grapevine</h3>
+              <h4 class="project-role">Design &amp; Development</h4>
+            </div>
+
+            <div class="col col-two">
+              <p class="project-description">LimeWire's (canceled) music streaming service. Responsibilities included user interface design and icon design.
+  </p>
+            </div>
+
+            <div class="col col-three">
+            </div>
           </div>
+        </article>
 
-          <div class="col col-two">
-            <p class="project-description">A redesign of Pictela's indentity.</p>
+        <!-- LimeWire Splashes -->
+        <article id="limewire-splashes" class="project">
+          <figure class="project-image-wrap">
+            <span class="project-image">
+              <img src="./src/images/placeholder.png" width="" height="" class="js-lazyload" data-original="./src/images/projects/limewire-splashes.png" />
+              <noscript><img src="./src/images/projects/limewire-splashes.png" width="" height="" /></noscript>
+            </span>
+          </figure>
+
+          <div class="project-meta columns">
+            <div class="col col-one">
+              <h3 class="project-title">LimeWire Splashes</h3>
+              <h4 class="project-role">Design</h4>
+            </div>
+
+            <div class="col col-two">
+              <p class="project-description">Splash screens for the LimeWire application with a common super-hero theme.</p>
+            </div>
+
+            <div class="col col-three"></div>
           </div>
+        </article>
 
-          <div class="col col-three">
+        <!-- LimeWire Music Blog -->
+        <article id="limewire-music-blog" class="project has-mask">
+          <figure class="project-image-wrap">
+            <span class="project-image">
+              <img src="./src/images/placeholder.png" width="" height="" class="js-lazyload shadow" data-original="./src/images/projects/limewire-music-blog.png" />
+                  <noscript><img src="./src/images/projects/limewire-music-blog.png" width="" height="" class="shadow" /></noscript>
+            </span>
+          </figure>
+
+          <div class="project-meta columns">
+            <div class="col col-one">
+              <h3 class="project-title">LimeWire Music Blog</h3>
+              <h4 class="project-role">Design &amp; Development</h4>
+            </div>
+
+            <div class="col col-two">
+              <p class="project-description">LimeWire's blog dedicated to all things indie music. Responsibilities included design and development of the WordPress theme used on the site.</p>
+            </div>
+
+            <div class="col col-three"></div>
           </div>
-        </div>
-      </article>
+        </article>
 
-      <!-- Pictela Premium Formats -->
-      <article id="pictela-premium-formats" class="project">
-        <figure class="project-image-wrap">
+        <!-- LimeSpot.com -->
+        <article id="limespot-com" class="project has-mask">
+          <figure class="project-image-wrap">
+            <span class="project-image">
+              <img src="./src/images/placeholder.png" width="" height="" class="js-lazyload shadow" data-original="./src/images/projects/limespot-com.png" />
+              <noscript><img src="./src/images/projects/limespot-com.png" width="" height="" class="shadow" /></noscript>
+            </span>
+          </figure>
 
-          <div class="flexslider">
-            <ul class="slides">
-              <li>
-                <span class="project-image">
-                  <img src="./static/i/placeholder.png" width="" height="" class="js-lazyload" data-original="./static/i/projects/pictela-premium-formats-1.png" />
-                  <noscript><img src="./static/i/projects/pictela-premium-formats-1.png" width="" height="" /></noscript>
-                </span>
-              </li>
-              <li>
-                <span class="project-image">
-                  <img src="./static/i/placeholder.png" width="" height="" class="js-lazyload" data-original="./static/i/projects/pictela-premium-formats-2.png" />
-                  <noscript><img src="./static/i/projects/pictela-premium-formats-2.png" width="" height="" /></noscript>
-                </span>
-              </li>
-              <li>
-                <span class="project-image">
-                  <img src="./static/i/placeholder.png" width="" height="" class="js-lazyload" data-original="./static/i/projects/pictela-premium-formats-3.png" />
-                  <noscript><img src="./static/i/projects/pictela-premium-formats-3.png" width="" height="" /></noscript>
-                </span>
-              </li>
-              <li>
-                <span class="project-image">
-                  <img src="./static/i/placeholder.png" width="" height="" class="js-lazyload" data-original="./static/i/projects/pictela-premium-formats-4.png" />
-                  <noscript><img src="./static/i/projects/pictela-premium-formats-4.png" width="" height="" /></noscript>
-                </span>
-              </li>
-            </ul>
+          <div class="project-meta columns">
+            <div class="col col-one">
+              <h3 class="project-title">LimeSpot.com</h3>
+              <h4 class="project-role">Design</h4>
+            </div>
+
+            <div class="col col-two">
+              <p class="project-description">A social networking site focused on making website creation as simple as possible. Responsibilities included user interface design, icon design and front-end development of the LimeSpot web application as well as design and development of themes for LimeSpot-powered sites.</p>
+            </div>
+
+            <div class="col col-three"></div>
           </div>
+        </article>
 
-        </figure>
+        <!-- LimeWire.com -->
+        <article id="limewire-com" class="project has-mask">
+          <figure class="project-image-wrap">
+            <span class="project-image">
+              <img src="./src/images/placeholder.png" width="" height="" class="js-lazyload shadow" data-original="./src/images/projects/limewire-com.png" />
+              <noscript><img src="./src/images/projects/limewire-com.png" width="" height="" class="shadow" /></noscript>
+            </span>
+          </figure>
 
-        <div class="project-meta columns">
-          <div class="col col-one">
-            <h3 class="project-title">Pictela Premium Formats</h3>
-            <h4 class="project-role">Design</h4>
+          <div class="project-meta columns">
+            <div class="col col-one">
+              <h3 class="project-title">LimeWire.com</h3>
+              <h4 class="project-role">Design &amp; Development</h4>
+            </div>
+
+            <div class="col col-two">
+              <p class="project-description">The LimeWire application's website. Responsibilities included design of the website, icon design, front/back-end development, and general maintenance.</p>
+            </div>
+
+            <div class="col col-three"></div>
           </div>
+        </article>
 
-          <div class="col col-two">
-            <p class="project-description">Pictela's initial templated ad format offering. Responsibilities included user interface design.</p>
+        <!-- LimeWire.org -->
+        <article id="limewire-org" class="project has-mask">
+          <figure class="project-image-wrap">
+            <span class="project-image">
+              <img src="./src/images/placeholder.png" width="" height="" class="js-lazyload shadow" data-original="./src/images/projects/limewire-org.png" />
+              <noscript><img src="./src/images/projects/limewire-org.png" width="" height="" class="shadow" /></noscript>
+            </span>
+          </figure>
+
+          <div class="project-meta columns">
+            <div class="col col-one">
+              <h3 class="project-title">LimeWire.org</h3>
+              <h4 class="project-role">Design &amp; Development</h4>
+            </div>
+
+            <div class="col col-two">
+              <p class="project-description">The LimeWire application's open source website. Responsibilities included design and development of themes for the blog (WordPress), forums (vBulletin), and wiki (MediaWiki).</p>
+            </div>
+
+            <div class="col col-three"></div>
           </div>
+        </article>
 
-          <div class="col col-three">
-          </div>
-        </div>
-      </article>
+      </section>
 
-      <!-- ThinkLaundry -->
-      <article id="thinklaundry-branding" class="project">
-        <figure class="project-image-wrap">
-          <span class="project-image">
-            <img src="./static/i/placeholder.png" width="" height="" class="js-lazyload" data-original="./static/i/projects/thinklaundry-branding.png" />
-            <noscript><img src="./static/i/projects/thinklaundry-branding.png" width="" height="" /></noscript>
-          </span>
-        </figure>
-
-        <div class="project-meta columns">
-          <div class="col col-one">
-            <h3 class="project-title">ThinkLaundry Branding</h3>
-            <h4 class="project-role">Design</h4>
-          </div>
-
-          <div class="col col-two">
-            <p class="project-description">Unused identity for a NYC-based startup.</p>
-          </div>
-
-          <div class="col col-three"></div>
-        </div>
-      </article>
-
-      <!-- Pictela Branding -->
-      <article id="grapevine" class="project with-mask">
-        <figure class="project-image-wrap">
-
-          <div class="flexslider">
-            <ul class="slides">
-              <li>
-                <span class="project-image">
-                  <img src="./static/i/placeholder.png" width="" height="" class="js-lazyload" data-original="./static/i/projects/grapevine-1.png" />
-                  <noscript><img src="./static/i/projects/grapevine-1.png" width="" height="" /></noscript>
-                </span>
-              </li>
-              <li>
-                <span class="project-image">
-                  <img src="./static/i/placeholder.png" width="" height="" class="js-lazyload" data-original="./static/i/projects/grapevine-2.png" />
-                  <noscript><img src="./static/i/projects/grapevine-2.png" width="" height="" /></noscript>
-                </span>
-              </li>
-            </ul>
-          </div>
-
-        </figure>
-
-        <div class="project-meta columns">
-          <div class="col col-one">
-            <h3 class="project-title">Grapevine</h3>
-            <h4 class="project-role">Design &amp; Development</h4>
-          </div>
-
-          <div class="col col-two">
-            <p class="project-description">LimeWire's (canceled) music streaming service. Responsibilities included user interface design and icon design.
-</p>
-          </div>
-
-          <div class="col col-three">
-          </div>
-        </div>
-      </article>
-
-      <!-- LimeWire Splashes -->
-      <article id="limewire-splashes" class="project">
-        <figure class="project-image-wrap">
-          <span class="project-image">
-            <img src="./static/i/placeholder.png" width="" height="" class="js-lazyload" data-original="./static/i/projects/limewire-splashes.png" />
-            <noscript><img src="./static/i/projects/limewire-splashes.png" width="" height="" /></noscript>
-          </span>
-        </figure>
-
-        <div class="project-meta columns">
-          <div class="col col-one">
-            <h3 class="project-title">LimeWire Splashes</h3>
-            <h4 class="project-role">Design</h4>
-          </div>
-
-          <div class="col col-two">
-            <p class="project-description">Splash screens for the LimeWire application with a common super-hero theme.</p>
-          </div>
-
-          <div class="col col-three"></div>
-        </div>
-      </article>
-
-      <!-- LimeWire Music Blog -->
-      <article id="limewire-music-blog" class="project with-mask">
-        <figure class="project-image-wrap">
-          <span class="project-image">
-            <img src="./static/i/placeholder.png" width="" height="" class="js-lazyload shadow" data-original="./static/i/projects/limewire-music-blog.png" />
-                <noscript><img src="./static/i/projects/limewire-music-blog.png" width="" height="" class="shadow" /></noscript>
-          </span>
-        </figure>
-
-        <div class="project-meta columns">
-          <div class="col col-one">
-            <h3 class="project-title">LimeWire Music Blog</h3>
-            <h4 class="project-role">Design &amp; Development</h4>
-          </div>
-
-          <div class="col col-two">
-            <p class="project-description">LimeWire's blog dedicated to all things indie music. Responsibilities included design and development of the WordPress theme used on the site.</p>
-          </div>
-
-          <div class="col col-three"></div>
-        </div>
-      </article>
-
-      <!-- LimeSpot.com -->
-      <article id="limespot-com" class="project with-mask">
-        <figure class="project-image-wrap">
-          <span class="project-image">
-            <img src="./static/i/placeholder.png" width="" height="" class="js-lazyload shadow" data-original="./static/i/projects/limespot-com.png" />
-            <noscript><img src="./static/i/projects/limespot-com.png" width="" height="" class="shadow" /></noscript>
-          </span>
-        </figure>
-
-        <div class="project-meta columns">
-          <div class="col col-one">
-            <h3 class="project-title">LimeSpot.com</h3>
-            <h4 class="project-role">Design</h4>
-          </div>
-
-          <div class="col col-two">
-            <p class="project-description">A social networking site focused on making website creation as simple as possible. Responsibilities included user interface design, icon design and front-end development of the LimeSpot web application as well as design and development of themes for LimeSpot-powered sites.</p>
-          </div>
-
-          <div class="col col-three"></div>
-        </div>
-      </article>
-
-      <!-- LimeWire.com -->
-      <article id="limewire-com" class="project with-mask">
-        <figure class="project-image-wrap">
-          <span class="project-image">
-            <img src="./static/i/placeholder.png" width="" height="" class="js-lazyload shadow" data-original="./static/i/projects/limewire-com.png" />
-            <noscript><img src="./static/i/projects/limewire-com.png" width="" height="" class="shadow" /></noscript>
-          </span>
-        </figure>
-
-        <div class="project-meta columns">
-          <div class="col col-one">
-            <h3 class="project-title">LimeWire.com</h3>
-            <h4 class="project-role">Design &amp; Development</h4>
-          </div>
-
-          <div class="col col-two">
-            <p class="project-description">The LimeWire application's website. Responsibilities included design of the website, icon design, front/back-end development, and general maintenance.</p>
-          </div>
-
-          <div class="col col-three"></div>
-        </div>
-      </article>
-
-      <!-- LimeWire.org -->
-      <article id="limewire-org" class="project with-mask">
-        <figure class="project-image-wrap">
-          <span class="project-image">
-            <img src="./static/i/placeholder.png" width="" height="" class="js-lazyload shadow" data-original="./static/i/projects/limewire-org.png" />
-            <noscript><img src="./static/i/projects/limewire-org.png" width="" height="" class="shadow" /></noscript>
-          </span>
-        </figure>
-
-        <div class="project-meta columns">
-          <div class="col col-one">
-            <h3 class="project-title">LimeWire.org</h3>
-            <h4 class="project-role">Design &amp; Development</h4>
-          </div>
-
-          <div class="col col-two">
-            <p class="project-description">The LimeWire application's open source website. Responsibilities included design and development of themes for the blog (WordPress), forums (vBulletin), and wiki (MediaWiki).</p>
-          </div>
-
-          <div class="col col-three"></div>
-        </div>
-      </article>
-
-    </section>
+    </div>
 
     <footer>
       <div class="content columns">
@@ -364,38 +377,21 @@
           <a href="mailto:hello@jorgemancheno.com"><span>hello@jorgemancheno.com</span></a>
         </div>
         <div class="col col-two">
-          <img src="./static/i/layout/logo.svg" class="logo-image">
+          <img src="./src/images/layout/logo.svg" class="logo-image">
         </div>
         <div class="col col-three">
-          &copy; 2016 Jorge Mancheno
+          &copy; 2018 Jorge Mancheno
         </div>
       </div>
     </footer>
 
   </div>
 
-  <!-- Analytics -->
-  <script type="text/javascript">
-
-      var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-10105364-1']);
-      _gaq.push(['_setDomainName', '.jorgemancheno.com']);
-      _gaq.push(['_trackPageview']);
-
-      (function() {
-          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      })();
-
-  </script>
-  <!-- / Analytics -->
-
   <!-- JS -->
   <script type="text/javascript" src="./node_modules/jquery/dist/jquery.min.js"></script>
   <script type="text/javascript" src="./node_modules/jquery_lazyload/jquery.lazyload.js"></script>
   <script type="text/javascript" src="./node_modules/flexslider/jquery.flexslider.js"></script>
-  <script type="text/javascript" src="./static/j/site.min.js"></script>
+  <script type="text/javascript" src="./dist/js/site.js"></script>
   <!-- / JS -->
 
 </body>

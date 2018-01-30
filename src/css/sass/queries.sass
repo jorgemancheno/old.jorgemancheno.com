@@ -1,0 +1,156 @@
+// Large
+@media only screen and (max-width: $breakpoint-large)
+  header
+    width: $sidebar-width-medium
+
+    .logo
+      padding: 1.5em 0 0.5em
+
+  footer,
+  .page
+    margin-left: $sidebar-width-medium
+
+  .page
+    margin-bottom: 0
+    padding: 3em
+
+    .intro
+      font-size: 2em
+
+  .project
+    .project-image-wrap
+      height: 400px
+
+// Medium
+@media only screen and (max-width: $breakpoint-medium)
+  .layout
+    border-width: 0.5em
+    .columns
+      display: block
+
+      .col.col-three
+        text-align: left
+
+  header
+    border-right: 0
+    height: $header-height
+    left: 0.5em
+    overflow: hidden
+    right: 0.5em
+    top: 0.5em
+    width: auto
+    z-index: 3
+
+    .logo
+      background-color: $page-color
+      height: $header-height
+      padding: 16px 0
+      position: relative
+      z-index: 1
+
+      &:after
+        display: block
+
+    .logo-link
+      height: 48px
+      width: 48px
+
+    .logo-image
+      margin: 0 auto
+
+    .burger
+      display: block
+
+    nav
+      background-color: $overlay-color
+      padding: 2em
+      pointer-events: none
+      position: relative
+      top: -100em
+      opacity: 0.25
+
+      &> ol
+        filter: blur($overlay-blur)
+
+      a
+        padding: 1.2em 0
+
+  footer
+    margin-left: 0
+    padding: 1em 1.5em
+
+    .columns
+      display: flex !important
+
+      .col
+        flex: 1 100% !important
+        text-align: center !important
+
+        &.col-one,
+        &.col-three
+          margin-bottom: 1em
+
+        &.col-two
+          order: 1
+
+  .page
+    margin: 0 0 2em
+    padding: 8em 1.5em 0
+
+  .project
+    padding: 8em 0 0
+
+    .project-image-wrap
+      height: 250px
+
+    .col-one, .col-two
+      margin-bottom: 1em
+
+    &.has-mask
+      .project-image
+        margin: 2em auto 0
+
+
+  // Active menu overrides
+.has-nav-active
+
+  header .burger
+    .lines
+      background-color: transparent
+
+    .lines:before
+      transform: translateY(6px) rotateZ(-45deg)
+
+    .lines:after
+      transform: translateY(-6px) rotateZ(45deg)
+
+  @media only screen and (max-width: $breakpoint-medium)
+    .layout
+      overflow: hidden
+
+    header
+      height: 98%
+      overflow: hidden
+
+    header .content
+      height: 100%
+
+      nav
+        box-shadow: 0 8px 40px $dark-divider-color
+        height: 80%
+        opacity: 1
+        overflow: auto
+        pointer-events: all
+        top: 0
+        @include transition-property(opacity, top)
+        @include transition-duration(0.3s)
+        @include transition-timing-function(ease-out)
+
+        &> ol
+          filter: blur(0)
+          @include transition(filter, 0.5s, ease-out)
+
+    .pages,
+    footer
+      filter: blur($overlay-blur)
+      @include transition(filter, 0.2s, ease-out)

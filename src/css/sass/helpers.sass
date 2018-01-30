@@ -32,10 +32,19 @@
 @mixin scale($ratio: 1)
     @include prefix(scale, $ratio)
 
+@mixin transition-property($property...)
+  @include prefix(transition-property, $property)
+
+@mixin transition-duration($duration...)
+  @include prefix(transition-duration, $duration)
+
+@mixin transition-timing-function($timing-function...)
+  @include prefix(transition-timing-function, $timing-function)
+
 @mixin transition($property: all, $duration: 0.2s, $timing-function: ease-in-out)
-    @include prefix(transition-property, $property)
-    @include prefix(transition-duration, $duration)
-    @include prefix(transition-timing-function, $timing-function)
+    @include transition-property($property)
+    @include transition-duration($duration)
+    @include transition-timing-function($timing-function)
 
 @mixin truncate
     overflow: hidden

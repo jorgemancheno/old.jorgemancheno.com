@@ -9,6 +9,9 @@
     "removeComments": false,
     "noImplicitAny": false
   },
+  "include": [
+    "file.ts"
+  ],
   "exclude": [
     "node_modules"
   ]
