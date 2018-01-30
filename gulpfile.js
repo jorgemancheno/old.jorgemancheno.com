@@ -9,11 +9,16 @@ var uglify = require('gulp-uglify');
 
 // Sass
 gulp.task('sass:build', function () {
-  return gulp.src('./src/css/sass/site.sass')
+  return gulp.src([
+      './node_modules/normalize.css/normalize.css',
+      './node_modules/flexslider/flexslider.css',
+      './src/css/sass/site.sass'
+    ])
     .pipe(plumber(function(error) {
       console.log(error)
     }))
     .pipe(sass().on('error', sass.logError))
+    .pipe(concat('site.css'))
     .pipe(gulp.dest('./dist/css'));
 });
 
